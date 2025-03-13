@@ -46,7 +46,7 @@ label_algo = tk.Label(root, text="Select Hash Algorithm:", font=("Helvetica", 12
 label_algo.pack(pady=5)
 hash_algorithm = ttk.Combobox(root, values=["MD5", "SHA-1", "SHA-256", "SHA-512"], state="readonly", font=("Helvetica", 12))
 hash_algorithm.pack(pady=5)
-hash_algorithm.current(2)  # Default SHA-256
+hash_algorithm.current(2)
 
 button_generate = tk.Button(root, text="Generate Hash", font=("Helvetica", 12), bg="#BB86FC", fg="black", command=generate_hash)
 button_generate.pack(pady=10)
